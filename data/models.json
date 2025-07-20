@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "username": "nendaranel",
+        "favourite": true,
+        "retired": true
+    },
+    {
+        "id": 2,
+        "username": "crazydaisy_",
+        "favourite": true,
+        "retired": false
+    },
+    {
+        "id": 3,
+        "username": "roselyn_rose",
+        "favourite": true,
+        "retired": false
+    },
+    {
+        "id": 4,
+        "username": "cutebambie",
+        "favourite": false,
+        "retired": true
+    }
+]

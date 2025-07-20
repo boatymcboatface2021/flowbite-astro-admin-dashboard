@@ -27,4 +27,12 @@ export interface User {
 	status: string;
 }
 
+export type Models = Model[];
+export interface Model {
+	id: number;
+	username: string;
+	favourite?: boolean;
+	retired?: boolean;
+}
+
 export type PlaygroundAction = (typeof playgroundActions)[number];

@@ -3,11 +3,13 @@
 
 import Code from 'astro/components/Code.astro';
 import LayoutSidebar from '../../app/LayoutSidebar.astro';
-import { getUsers, getProducts } from '../../services/index.js';
+import { getUsers, getProducts, getModels } from '../../services/index.js';
 
 const products = JSON.stringify(getProducts(), null, 2);
 
 const users = JSON.stringify(getUsers(), null, 2);
+
+const models = JSON.stringify(getModels(), null, 2);
 ---
 
 <LayoutSidebar class="bg-slate-800 text-slate-100">
@@ -39,6 +41,13 @@ const users = JSON.stringify(getUsers(), null, 2);
 			</a>
 
 			<Code code={users} lang="json" />
+		</div>
+		<div class="mb-16">
+			<a href="/api/models" target="_blank">
+				<h1 class="text-6xl font-bold mb-8 dark:text-slate-100">Models</h1>
+			</a>
+
+			<Code code={models} lang="json" />
 		</div>
 	</div>
 </LayoutSidebar>
